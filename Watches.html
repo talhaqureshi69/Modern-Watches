@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChronoBoys — Premium Watches</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --brand: #6aa5ff;
+    }
+    .navbar-glass {
+      backdrop-filter: blur(12px);
+      background: rgba(20, 20, 24, 0.55);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .hero-section {
+      position: relative;
+      min-height: 90vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      background:
+       linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75)),
+       url('https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
+height:100vh;
+    }
+    .feature-card, .product-card, .pricing-card {
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 1rem;
+      background: rgba(255,255,255,0.05);
+      padding: 1rem;
+      transition: transform .25s, border-color .25s;
+    }
+    .product-card:hover, .pricing-card:hover, .feature-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--brand);
+    }
+    .price { font-weight: 700; }
+    footer { background: rgba(255,255,255,0.03); }
+    .object-cover { object-fit: cover; }
+	.forms{
+	background-image:url("https://images.unsplash.com/photo-1612771409641-b0478cab8b69?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjB3YXRjaHxlbnwwfHwwfHx8MA%3D%3D");
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+	}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-glass fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#"><i class="bi bi-watch"></i> ChronoBoys</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#watches">Watches</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header id="home" class="hero-section text-white">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Premium Watches for Bold Men</h1>
+    <p class="lead">Sports • Classic • Smart Android Watches</p>
+    <a href="#watches" class="btn btn-primary rounded-pill px-4">Shop Now</a>
+  </div>
+</header>
+
+<!-- Features -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature-card text-center">
+          <i class="bi bi-lightning-charge fs-1"></i>
+          <h5 class="mt-3">Fast Delivery</h5>
+          <p class="text-secondary">Free nationwide shipping</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card text-center">
+          <i class="bi bi-shield-check fs-1"></i>
+          <h5 class="mt-3">Warranty</h5>
+          <p class="text-secondary">2-year official warranty</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card text-center">
+          <i class="bi bi-phone fs-1"></i>
+          <h5 class="mt-3">Android Ready</h5>
+          <p class="text-secondary">Smart features included</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Watches -->
+<section id="watches" class="py-5 bg-body-tertiary">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Watches</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card product-card h-100">
+          <img src="https://w0.peakpx.com/wallpaper/85/356/HD-wallpaper-tariq-collection-luxury-new-clock-watch-watches-black-dark.jpg" alt="" width="auto" height="500px">
+          <div class="card-body">
+            <h5>Chrono Sport X</h5>
+            <p class="text-secondary">Rugged & waterproof</p>
+            <span class="price">Rs 18,999</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card h-100">
+          <img src="https://media.istockphoto.com/id/171585393/photo/watch.jpg?s=612x612&w=0&k=20&c=eyRhDVc9inHnF2lk7VSE5voUZSNvC6WQalCHhfEwrCY=" alt=""width="auto" height="500px">
+          <div class="card-body">
+            <h5>Classic Steel</h5>
+            <p class="text-secondary">Minimal stainless look</p>
+            <span class="price">Rs 14,499</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card h-100">
+          <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=1200&auto=format&fit=crop" class="card-img-top object-cover" alt=""width="auto" height="500px">
+          <div class="card-body">
+            <h5>Smart Pro S</h5>
+            <p class="text-secondary">Android + GPS</p>
+            <span class="price">Rs 22,999</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Pricing</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="pricing-card text-center">
+          <h4>Starter</h4>
+          <h3>Rs 9,999</h3>
+          <p class="text-secondary">Everyday quartz</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pricing-card text-center border border-primary">
+          <h4>Premium</h4>
+          <h3>Rs 17,999</h3>
+          <p class="text-secondary">Sports & Classic</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pricing-card text-center">
+          <h4>Smart</h4>
+          <h3>Rs 24,999</h3>
+          <p class="text-secondary">Android watches</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-body-tertiary forms">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <p><i class="bi bi-geo-alt"></i> Islambad, Pakistan</p>
+        <p><i class="bi bi-envelope"></i> talhahussai92@gamil.com</p>
+        <p><i class="bi bi-telephone"></i> +92 3145271881</p>
+      </div>
+      <div class="col-md-6">
+        <form class="card card-body">
+          <input type="text" class="form-control mb-2" placeholder="Your Name">
+          <input type="email" class="form-control mb-2" placeholder="Email">
+          <textarea class="form-control mb-2" rows="3" placeholder="Message"></textarea>
+          <button class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 text-center">
+  <span class="text-secondary">© <span id="year"></span> ChronoBoys</span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
